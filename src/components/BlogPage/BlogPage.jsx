@@ -45,7 +45,7 @@ const BlogPage = () => {
   };
 
   return (
-    <div id="canvas">
+    <div id="canvas" className="min-h-screen">
       <h1 className="text-center text-5xl pt-10 pl-10 pr-10 text-[#fff]">
         Blogs
       </h1>
@@ -80,24 +80,29 @@ const BlogPage = () => {
         </NavLink>
       </div>
       <div className="blogcards">
-        {blogs.length>0 ? (<>
-         {blogs.map((element) => (
-          <div className="bCard" key={element._id}>
-            <BlogCard
-              id={element._id}
-              author={element.creator}
-              name={element.creator}
-              title={element.title.slice(0, 30)}
-              time={element.createdAt}
-              imgLink="https://picsum.photos/300/200"
-              tags={element.allTags}
-              content={element?.content?.slice(0, 200)}
-              likes={element.likes.length}
-            />
+        {blogs.length > 0 ? (
+          <>
+            {blogs.map((element) => (
+              <div className="bCard" key={element._id}>
+                <BlogCard
+                  id={element._id}
+                  author={element.creator}
+                  name={element.creator}
+                  title={element.title.slice(0, 30)}
+                  time={element.createdAt}
+                  imgLink="https://picsum.photos/300/200"
+                  tags={element.allTags}
+                  content={element?.content?.slice(0, 200)}
+                  likes={element.likes.length}
+                />
+              </div>
+            ))}
+          </>
+        ) : (
+          <div className="text-white text-2xl h-64 ">
+            There are no blogs to show.
           </div>
-        ))}</>):(<div className="text-white text-2xl h-64 ">There are no blogs to show.</div>)}
-
- 
+        )}
       </div>
       {/* <div className="flex flex-wrap justify-center mb-10">
         <button

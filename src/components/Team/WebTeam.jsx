@@ -54,16 +54,18 @@ const WebTeam = () => {
   const [currentInd, setCurrentInd] = useState(0);
 
   return (
-    <div className="bg-[#252b42]  w-screen">
+    <div className="bg-[#252b42]">
       <h1 className="text-center text-5xl p-10 text-[#fff]">
         Meet the Web Team
       </h1>
-      <div className="pb-10">
-        <div className="flex justify-center items-center flex-wrap gap-x-32 gap-y-8 px-10 mt-4">
+      <div>
+        <div className="flex justify-center items-center flex-wrap gap-x-32 gap-y-8 px-10 pb-10 mt-4">
           {webTeamDetails.map((details, ind) => (
-            <div className="flex flex-col items-center gap-4">
+            <div key={ind} className="flex flex-col items-center gap-4">
               <div className="relative">
                 <img
+                  height={150}
+                  width={150}
                   src={details.imgLink}
                   alt={details.name}
                   className="rounded-full mx-auto  w-48 h-48"

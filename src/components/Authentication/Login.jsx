@@ -4,17 +4,17 @@ import logo from "../../assets/img/Pandulipi Logo - White.webp";
 import { useLogin } from "../../hooks/useLogin";
 
 const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const { login, error, isLoading } = useLogin();
   const verifyAndPostAuthInfo = async (event) => {
     event.preventDefault();
     await login(email, password);
-  }
+  };
 
   return (
     <>
-      <div className="flex justify-center items-center max-h-fit h-screen sm:h-fit w-screen bg-[#252b42] p-5 ">
+      <div className="flex justify-center items-center max-h-fit min-h-screen sm:h-fit w-screen bg-[#252b42] p-5 ">
         <div className="flex-col items-center justify-center rounded-xl max-w-lg bg-[#fff] shadow-[0_0_10px_#00000080]">
           <div className="bg-[#295C7Acc]  flex items-center justify-center rounded-t-xl">
             <img src={logo} className="w-9/12" alt="Pandulipi logo" />
@@ -42,7 +42,7 @@ const Login = () => {
                   placeholder="Enter your email"
                   name="email"
                   className="p-3 pl-10 text-black font-medium w-80 sm:w-96 bg-[#295C7A] bg-opacity-10 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
-                  onChange={(e)=> setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="relative">
@@ -73,7 +73,11 @@ const Login = () => {
                   Forget Password ?
                 </NavLink>
               </div>
-              {error && <div className="text-red-600 font-bold my-1 bg-[#fbe7e7] p-1 rounded-md border-2 border-red-300">{error}</div>}
+              {error && (
+                <div className="text-red-600 font-bold my-1 bg-[#fbe7e7] p-1 rounded-md border-2 border-red-300">
+                  {error}
+                </div>
+              )}
 
               <div>
                 <button
