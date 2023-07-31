@@ -170,26 +170,31 @@ const CoreTeam = () => {
   ];
 
   return (
-    <div className="bg-[#EEEEEE] w-screen">
-      <h1 className="text-center text-5xl p-10 text-[#295C7A]">
+    <div className="bg-[#EEEEEE] w-full">
+      <h1 className="text-center text-5xl p-10 pb-16 text-[#295C7A]">
         Meet the Core Team
       </h1>
-      <div className="flex flex-col items-center pb-10">
-        <div className="flex justify-center items-center flex-wrap gap-x-32 pb-10 gap-y-8 px-10">
+      <div>
+        <div className="flex max-w-7xl mx-auto justify-center items-center flex-wrap gap-x-14 pb-10 gap-y-4 px-10">
           {coreTeamDetails.map((details, ind) => (
-            <div className="flex flex-col items-center gap-4">
-              <div className="relative">
+            <div
+              key={ind}
+              className="flex flex-col items-center justify-start w-48 h-72 gap-4 "
+            >
+              <div className="relative ">
                 <img
+                  height={150}
+                  width={150}
                   src={details.imgLink}
                   alt={details.name}
-                  className="rounded-full mx-auto  w-44 h-44 "
+                  className="rounded-full  mx-auto  w-44 h-44 "
                 />
                 <button
                   onClick={() => {
                     setShow(true);
                     setCurrentInd(ind);
                   }}
-                  className="absolute bottom-4 right-[-3px] rounded-full py-[6px] px-[15px] bg-transparent"
+                  className="absolute bottom-4 right-[-3px] rounded-full py-[6px] px-[15px] bg-transparent "
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

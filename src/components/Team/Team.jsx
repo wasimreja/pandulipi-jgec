@@ -17,7 +17,7 @@ const Team = () => {
     scrollToTop();
   };
   return (
-    <div className="flex flex-col items-center w-screen bg-[#252b42] pb-5">
+    <div className="flex flex-col items-center bg-[#252b42] pb-5">
       <CoreTeam2k24 />
       <WebTeam />
       <NavLink to="/team2k23">
