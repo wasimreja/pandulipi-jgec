@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <div className="bg-[#EEEEEE] flex flex-col items-center justify-center min-h-[80vh] w-screen">
+    <div className="bg-[#EEEEEE] flex flex-col items-center justify-center min-h-[80vh] ">
       <h2 className="text-center text-5xl xl:text-6xl p-10 text-[#295C7A]">
         Contact Us
       </h2>

@@ -27,7 +27,7 @@ const Signup = () => {
   };
   return (
     <>
-      <div className="flex justify-center items-center min-h-screen max-h-fit w-screen bg-[#252b42] py-10 px-5">
+      <div className="flex justify-center items-center min-h-screen max-h-fit  bg-[#252b42] py-10 px-5">
         <div className=" flex-col rounded-xl max-w-lg bg-[#fff] shadow-[0_0_10px_#00000080]">
           <div className="bg-[#295C7Acc] flex items-center justify-center rounded-t-xl ">
             <img src={logo} className="w-9/12" alt="Pandulipi logo" />
