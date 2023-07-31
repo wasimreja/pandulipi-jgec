@@ -126,7 +126,7 @@ const CoreTeam = () => {
   ];
 
   return (
-    <div className="bg-[#EEEEEE] w-full">
+    <div className="bg-[#EEEEEE]">
       <h1 className="text-center text-5xl p-10 pb-16 text-[#295C7A]">
         Meet the Core Team
       </h1>
@@ -143,7 +143,7 @@ const CoreTeam = () => {
                   width={150}
                   src={details.imgLink}
                   alt={details.name}
-                  className="rounded-full ring-2 ring-blue-700 p-1 mx-auto  w-44 h-44 "
+                  className="rounded-full mx-auto  w-44 h-44 "
                 />
                 <button
                   onClick={() => {

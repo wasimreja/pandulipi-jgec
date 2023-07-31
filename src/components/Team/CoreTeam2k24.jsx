@@ -187,7 +187,7 @@ const CoreTeam = () => {
                   width={150}
                   src={details.imgLink}
                   alt={details.name}
-                  className="rounded-full ring-2 ring-blue-700 p-1 mx-auto  w-44 h-44 "
+                  className="rounded-full  mx-auto  w-44 h-44 "
                 />
                 <button
                   onClick={() => {
