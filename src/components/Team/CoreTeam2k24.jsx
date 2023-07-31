@@ -175,7 +175,7 @@ const CoreTeam = () => {
         Meet the Core Team
       </h1>
       <div>
-        <div className="flex max-w-7xl mx-auto justify-center items-center flex-wrap gap-x-20 pb-10 gap-y-4 px-10">
+        <div className="flex max-w-7xl mx-auto justify-center items-center flex-wrap gap-x-14 pb-10 gap-y-4 px-10">
           {coreTeamDetails.map((details, ind) => (
             <div
               key={ind}
