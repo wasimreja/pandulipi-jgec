@@ -171,15 +171,15 @@ const CoreTeam = () => {
 
   return (
     <div className="bg-[#EEEEEE] w-full">
-      <h1 className="text-center text-5xl p-10 pb-16 text-[#295C7A]">
+      <h1 className="text-center text-5xl p-10 text-[#295C7A]">
         Meet the Core Team
       </h1>
       <div>
-        <div className="flex max-w-7xl mx-auto justify-center items-center flex-wrap gap-x-14 pb-10 gap-y-4 px-10">
+        <div className="flex max-w-8xl mx-auto justify-center items-center flex-wrap gap-x-20 gap-y-4 p-10">
           {coreTeamDetails.map((details, ind) => (
             <div
               key={ind}
-              className="flex flex-col items-center justify-start w-48 h-72 gap-4 "
+              className="flex flex-col items-center justify-start w-48 h-72 gap-4"
             >
               <div className="relative ">
                 <img
@@ -187,7 +187,7 @@ const CoreTeam = () => {
                   width={150}
                   src={details.imgLink}
                   alt={details.name}
-                  className="rounded-full  mx-auto  w-44 h-44 "
+                  className="rounded-full mx-auto w-44 h-44"
                 />
                 <button
                   onClick={() => {

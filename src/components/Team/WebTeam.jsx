@@ -59,16 +59,16 @@ const WebTeam = () => {
         Meet the Web Team
       </h1>
       <div>
-        <div className="flex justify-center items-center flex-wrap gap-x-32 gap-y-8 px-10 pb-10 mt-4">
+        <div className="flex max-w-8xl mx-auto justify-center items-center flex-wrap gap-x-20 gap-y-4 p-10">
           {webTeamDetails.map((details, ind) => (
-            <div key={ind} className="flex flex-col items-center gap-4">
+            <div key={ind} className="flex flex-col items-center justify-start w-48 h-72 gap-4">
               <div className="relative">
                 <img
                   height={150}
                   width={150}
                   src={details.imgLink}
                   alt={details.name}
-                  className="rounded-full mx-auto  w-48 h-48"
+                  className="rounded-full mx-auto w-44 h-44"
                 />
                 <button
                   onClick={() => {

@@ -46,7 +46,7 @@ const BlogPage = () => {
 
   return (
     <div id="canvas" className="min-h-screen">
-      <h1 className="text-center text-5xl pt-10 pl-10 pr-10 text-[#fff]">
+      <h1 className="text-center text-5xl p-10 pl-10 pr-10 text-[#fff]">
         Blogs
       </h1>
       <div className="blogNav flex flex-col items-center justify-center m-10">
@@ -74,7 +74,7 @@ const BlogPage = () => {
         </form>
         <NavLink
           to="/createblog"
-          className="text-white text-xl mt-5 border-2 px-8 py-1.5 rounded-full border-white flex items-center hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
+          className="text-white text-xl mt-10 border-2 px-8 py-1.5 rounded-full border-white flex items-center hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
         >
           Create Blog
         </NavLink>
