@@ -2,16 +2,24 @@ import React, { useState } from 'react'
 import Modal from './Modal';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import './style.css';
-import RabindraJayanti from "../../assets/events/20220509_111512.webp"
-import WorldPoetryDay from "../../assets/events/FB_IMG_1682606523921.webp"
-import WallMagazine from "../../assets/events/FB_IMG_1682606237926.webp"
-import BudSpeak from "../../assets/events/FB_IMG_1682606032567.webp"
+import RabindraJayanti22 from "../../assets/events/Rabindra Jayanti 2022.webp"
+import WorldPoetryDay from "../../assets/events/World Poetry Day.webp"
+import WallMagazine from "../../assets/events/Wall Magazine.webp"
+import BudSpeak from "../../assets/events/BudSpeak.webp"
+import RabindraJayanti23 from "../../assets/events/Rabindra Jayanti 2023.webp"
+import AnnualMagazine from "../../assets/events/Annual Magazine.webp"
+import AnnualMagazine1 from "../../assets/events/Annual Magazine (1).webp"
 
 const Album1 = () => {
     const column1 = [
         {
-            "name": "Rabindra Jayanti",
-            "imgLink": RabindraJayanti
+            "name": "Rabindra Jayanti 2022",
+            "imgLink": RabindraJayanti22
+        },
+        {
+            "name": "Rabindra Jayanti 2023",
+            "imgLink": RabindraJayanti23
+
         },
     ]
     const column2 = [
@@ -19,11 +27,21 @@ const Album1 = () => {
             "name": "World Poetry Day",
             "imgLink": WorldPoetryDay
         },
+        {
+            "name": "Annual Magazine",
+            "imgLink": AnnualMagazine
+
+        },
     ]
     const column3 = [
         {
             "name": "Wall Magazine",
             "imgLink": WallMagazine
+        },
+        {
+            "name": "Annual Magazine",
+            "imgLink": AnnualMagazine1
+
         },
     ]
     const column4 = [
